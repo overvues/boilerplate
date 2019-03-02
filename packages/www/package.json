@@ -1,5 +1,5 @@
 {
-  "name": "monorepo",
+  "name": "@overvues/nextjs",
   "license": "MIT",
   "dependencies": {
     "isomorphic-unfetch": "3.0.0",
@@ -8,6 +8,7 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
-    "now-build": "next build"
+    "now-build": "next build",
+    "build": "tsc -p tsconfig.json"
   }
 }

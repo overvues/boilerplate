@@ -1,0 +1,9 @@
+{
+  "extends": "../../configs/base.tsconfig",
+  "compilerOptions": {
+    "rootDir": "components",
+    "outDir": "./lib",
+    "target": "es6"
+  },
+  "include": ["components"]
+}

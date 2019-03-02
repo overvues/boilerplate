@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "strict": true,
+    "lib": ["dom", "esnext"],
+    "noEmit": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "public", "**/*.spec.ts", "**/*.spec.tsx"]
+}
