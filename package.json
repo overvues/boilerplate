@@ -4,14 +4,24 @@
   "scripts": {
     "build": "lerna run build",
     "format": "lerna run format",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix",
     "test": "lerna run test",
     "now-build": "npm run build"
   },
   "devDependencies": {
-    "lerna": "^3.13.1",
     "@types/jest": "^24.0.9",
     "@types/node": "^11.10.4",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.15.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "husky": "^1.3.1",
     "jest": "^24.1.0",
+    "lerna": "^3.13.1",
+    "lint-staged": "^8.1.5",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333"
   },

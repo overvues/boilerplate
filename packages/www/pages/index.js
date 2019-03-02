@@ -8,7 +8,8 @@ const langs = [
   { name: 'Node.js', path: 'node', ext: '.js' }
 ]
 
-const Page = ({nows}) => <div className="container">
+const Page = ({ nows }) => (
+  <div className="container">
     <div className="logo">
       <svg width={40} height={36}>
         <path
@@ -19,37 +20,61 @@ const Page = ({nows}) => <div className="container">
       </svg>
     </div>
     <div className="clocks">
-      {nows.map(({name, path, ext, now}) => 
-        <a href={`https://zeit.co/now-examples/monorepo/4csp3st7w/source?f=src/${path}/index${ext}`} target="_blank" title={name} key={path}>
-          <Time 
-            name={name}
-            path={path}
-            now={now}
-          />
+      {nows.map(({ name, path, ext, now }) => (
+        <a
+          href={`https://zeit.co/now-examples/monorepo/4csp3st7w/source?f=src/${path}/index${ext}`}
+          target="_blank"
+          title={name}
+          key={path}
+        >
+          <Time name={name} path={path} now={now} />
         </a>
-      )}
+      ))}
     </div>
     <div className="intro">
-      <hr/>
+      <hr />
       <h2>What is this?</h2>
-      <p>We built this deployment to showcase the power and flexibility of <a href="https://zeit.co/blog/now-2" target="_blank">Now 2.0</a>. It's organized as a monorepo that combines multiple technologies.</p>
-      <p>The entrypoint to this deployment is a Next.js application, compiled to serverless functions that server-render on-demand.</p>
-      <p>Thanks to our <a href="https://zeit.co/docs/v2/deployments/builders/overview" title="builders" target="_blank">builders</a>, you are not limited to just static or dynamic, Go or Node.js. The possibilities are endless.</p>
+      <p>
+        We built this deployment to showcase the power and flexibility of{' '}
+        <a href="https://zeit.co/blog/now-2" target="_blank">
+          Now 2.0
+        </a>
+        . It's organized as a monorepo that combines multiple technologies.
+      </p>
+      <p>
+        The entrypoint to this deployment is a Next.js application, compiled to
+        serverless functions that server-render on-demand.
+      </p>
+      <p>
+        Thanks to our{' '}
+        <a
+          href="https://zeit.co/docs/v2/deployments/builders/overview"
+          title="builders"
+          target="_blank"
+        >
+          builders
+        </a>
+        , you are not limited to just static or dynamic, Go or Node.js. The
+        possibilities are endless.
+      </p>
     </div>
     <style jsx global>{`
       * {
         box-sizing: border-box;
       }
-      html, body {
+      html,
+      body {
         height: 100%;
       }
       body {
         margin: 0;
         color: white;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing:grayscale;
+        -moz-osx-font-smoothing: grayscale;
         background: radial-gradient(circle, #333, #333 1px, #000 1px, #000);
         background-size: 28px 28px;
         background-position: center;
@@ -66,15 +91,23 @@ const Page = ({nows}) => <div className="container">
         font-weight: 600;
       }
       code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          serif;
         font-size: 0.9em;
       }
       code::before,
       code::after {
         content: '\`';
       }
-      ::selection{ background: #f81ce5; color: white; }
-      ::-moz-selection{ background: #f81ce5; color: white; }
+      ::selection {
+        background: #f81ce5;
+        color: white;
+      }
+      ::-moz-selection {
+        background: #f81ce5;
+        color: white;
+      }
       .container {
         display: flex;
         flex-direction: column;
@@ -94,7 +127,7 @@ const Page = ({nows}) => <div className="container">
         max-width: 640px;
       }
       .intro a {
-        margin-right: .15em;
+        margin-right: 0.15em;
         border-bottom: 1px solid;
       }
       h2 {
@@ -125,7 +158,7 @@ const Page = ({nows}) => <div className="container">
         padding: 10px;
         margin: 20px 0;
         font-size: 17px;
-        transition: all .1s ease;
+        transition: all 0.1s ease;
       }
       .clocks a:hover {
         box-shadow: 0 0 0 1px #666;
@@ -167,13 +200,16 @@ const Page = ({nows}) => <div className="container">
       }
     `}</style>
   </div>
+)
 
-Page.getInitialProps = async ({req}) => {
+Page.getInitialProps = async ({ req }) => {
   const baseUrl = `https://${req.headers.host}/api`
-  const nows = await Promise.all(langs.map(async ({name, path, ext}) => {
-    const now = await (await fetch(`${baseUrl}/${path}`)).text()
-    return {name, path, now, ext}
-  }))
+  const nows = await Promise.all(
+    langs.map(async ({ name, path, ext }) => {
+      const now = await (await fetch(`${baseUrl}/${path}`)).text()
+      return { name, path, now, ext }
+    })
+  )
 
   return { nows }
 }

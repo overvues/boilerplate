@@ -1,0 +1,6 @@
+// Add `&& lint-staged` in future
+{
+  "hooks": {
+    "pre-commit": ["yarn build"]
+  }
+}
