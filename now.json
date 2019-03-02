@@ -1,0 +1,35 @@
+{
+  "name": "overvues",
+  "version": 2,
+  "builds": [
+    { "src": "packages/www/package.json", "use": "@now/next" },
+    {
+      "src": "packages/static/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/redirect-test",
+      "status": 302,
+      "headers": {
+        "location": "https://google.com"
+      }
+    },
+    {
+      "src": "/next/(.*)",
+      "dest": "/packages/www/$1",
+      "headers": {
+        "x-request-path": "$1"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/packages/static/$1",
+      "headers": {
+        "x-request-path": "$1"
+      }
+    }
+  ]
+}
