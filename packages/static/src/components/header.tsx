@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
+interface Props {
+  siteTitle: string
+}
+
+const Header = (props: Props) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -23,7 +27,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none'
           }}
         >
-          {siteTitle}
+          {props.siteTitle}
         </Link>
       </h1>
     </div>

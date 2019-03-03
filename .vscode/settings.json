@@ -9,7 +9,6 @@
     "**/node_modules": true,
     "**/public": true
   },
-  "editor.rulers": [80],
   "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
