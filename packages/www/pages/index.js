@@ -1,3 +1,4 @@
+import React from 'react'
 import Time from '../components/time'
 import 'isomorphic-unfetch'
 
@@ -23,7 +24,6 @@ const Page = ({ nows }) => (
       {nows.map(({ name, path, ext, now }) => (
         <a
           href={`https://zeit.co/now-examples/monorepo/4csp3st7w/source?f=src/${path}/index${ext}`}
-          target="_blank"
           title={name}
           key={path}
         >
@@ -36,10 +36,8 @@ const Page = ({ nows }) => (
       <h2>What is this?</h2>
       <p>
         We built this deployment to showcase the power and flexibility of{' '}
-        <a href="https://zeit.co/blog/now-2" target="_blank">
-          Now 2.0
-        </a>
-        . It's organized as a monorepo that combines multiple technologies.
+        <a href="https://zeit.co/blog/now-2">Now 2.0</a>. Its organized as a
+        monorepo that combines multiple technologies.
       </p>
       <p>
         The entrypoint to this deployment is a Next.js application, compiled to
@@ -50,7 +48,6 @@ const Page = ({ nows }) => (
         <a
           href="https://zeit.co/docs/v2/deployments/builders/overview"
           title="builders"
-          target="_blank"
         >
           builders
         </a>
