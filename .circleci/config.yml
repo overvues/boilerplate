@@ -36,3 +36,4 @@ jobs:
       # Now for github deploys and catches, and I have a precommit hook. Might take that out...
       # - run: yarn test
       - run: yarn lint
+      - run: yarn test
