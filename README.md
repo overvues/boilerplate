@@ -13,3 +13,17 @@
     - To ignore the next line use `// @ts-ignore`
     - Still does not have feature parity with tslint
     - Rules can be [found here](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) for typescript.
+
+### Pre-Commit
+
+- If you would like to add a precommit hook, add the following to `.huskyrc` :
+
+```
+{
+  "hooks": {
+    "pre-commit": ["yarn build"]
+  }
+}
+```
+
+In our case we will use circle-ci 
