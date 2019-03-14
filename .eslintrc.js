@@ -15,7 +15,8 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   plugins: ['@typescript-eslint', 'react'],
   parserOptions: {
@@ -32,7 +33,8 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     camelcase: 'off',
     '@typescript-eslint/camelcase': ['warn', { properties: 'always' }],
-    'no-console': 'off'
+    'no-console': 'off',
+    'no-undefined': 'off'
   },
   overrides: [
     {
