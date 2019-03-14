@@ -32,6 +32,7 @@
     "packages/backend",
     "packages/dynamic",
     "packages/shared-components",
-    "packages/static"
+    "packages/static",
+    "packages/www"
   ]
 }
