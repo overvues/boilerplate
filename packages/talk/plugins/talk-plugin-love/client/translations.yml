@@ -1,0 +1,52 @@
+ar:
+  talk-plugin-love:
+    love: Love
+    loved: Loved
+da:
+  talk-plugin-love:
+    love: Love
+    loved: Loved    
+de:
+  talk-plugin-love:
+    love: Ich liebe es
+    loved: Ich liebe es
+en:
+  talk-plugin-love:
+    love: Love
+    loved: Loved
+es:
+  talk-plugin-love:
+    love: Amo
+    loved: Amé
+fr:
+  talk-plugin-love:
+    love: Love
+    loved: Loved
+he:
+  talk-plugin-love:
+    love: אוהב
+    loved: אהבתי
+it:
+  talk-plugin-love:
+    love: Amo
+    loved: Amato
+nl_NL:
+  talk-plugin-love:
+    love: Love
+    loved: Loved
+pt_BR:
+  talk-plugin-love:
+    love: Love
+    loved: Loved
+sr:
+  talk-plugin-love:
+    love: Volim ovo
+    loved: Volite ovo
+zh_CN:
+  talk-plugin-love:
+    love: " 比心"
+    loved: "已比心"
+zh_TW:
+  talk-plugin-love:
+    love: 比心
+    loved: 已比心

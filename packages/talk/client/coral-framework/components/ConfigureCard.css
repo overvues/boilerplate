@@ -1,0 +1,48 @@
+.card {
+  max-width: 600px;
+  min-height: 100px;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.collapsibleCard {
+  min-height: auto;
+}
+
+.enabledCard {
+  border-left: 7px solid #00796b;
+}
+
+.action {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.wrapper {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.body {
+  margin-top: 7px;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.disabledBody {
+  color: #ccc;
+}
+

@@ -1,0 +1,52 @@
+ar:
+  talk-plugin-like:
+    like: أعجبني
+    liked: إعجاب
+da:
+  talk-plugin-like:
+    like: Like
+    liked: Liked
+de:
+  talk-plugin-like:
+    like: Gefällt mir
+    liked: Gefällt mir
+en:
+  talk-plugin-like:
+    like: Like
+    liked: Liked
+es:
+  talk-plugin-like:
+    like: Me Gusta
+    liked: Me Gustó
+fr:
+  talk-plugin-like:
+    like: Like
+    liked: Liked
+he:
+  talk-plugin-like:
+    like: לייק
+    liked: לייקד
+it:
+  talk-plugin-like:
+    like: Mi piace
+    liked: Piaciuto
+nl_NL:
+  talk-plugin-like:
+    like: Like
+    liked: Liked
+pt_BR:
+  talk-plugin-like:
+    like: Like
+    liked: Liked
+sr:
+  talk-plugin-like:
+    like: Sviđa mi se
+    liked: Sviđa vam se
+zh_CN:
+  talk-plugin-like:
+    like: "喜欢"
+    liked: "已喜欢"
+zh_TW:
+  talk-plugin-like:
+    like: 喜歡
+    liked: 已喜歡

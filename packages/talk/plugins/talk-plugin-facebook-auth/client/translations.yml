@@ -1,0 +1,40 @@
+ar:
+  talk-plugin-facebook-auth:
+    sign_in: "تسجيل الدخول عبر حساب الفيسبوك"
+    sign_up: "اشترك عبر حساب الفيسبوك"
+de:
+  talk-plugin-facebook-auth:
+    sign_in: "Mit Facebook anmelden"
+    sign_up: "Mit Facebook registrieren"
+en:
+  talk-plugin-facebook-auth:
+    sign_in: "Sign in with Facebook"
+    sign_up: "Sign up with Facebook"
+es:
+  talk-plugin-facebook-auth:
+    sign_in: "Entrar con Facebook"
+    sign_up: "Registrarse con Facebook"
+fr:
+  talk-plugin-facebook-auth:
+    sign_in: "Connectez-vous avec Facebook"
+    sign_up: "Inscrivez-vous avec Facebook"
+he:
+  talk-plugin-facebook-auth:
+    sign_in: "התחבר עם פייסבוק"
+    sign_up: "הרשם עם פייסבוק"
+it:
+  talk-plugin-facebook-auth:
+    sign_in: "Accedi con Facebook"
+    sign_up: "Registrati con Facebook"
+nl_NL:
+  talk-plugin-facebook-auth:
+    sign_in: "Inloggen met Facebook"
+    sign_up: "Registreren met Facebook"
+zh_CN:
+  talk-plugin-facebook-auth:
+    sign_in: "使用 Facebook 帐号"
+    sign_up: "使用 Facebook 帐号"
+zh_TW:
+  talk-plugin-facebook-auth:
+    sign_in: "使用 Facebook 帳號"
+    sign_up: "使用 Facebook 帳號"
