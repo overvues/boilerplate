@@ -6,7 +6,7 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Testing Title</h1>
+    <h1>Hot Reloading</h1>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       <Image />
     </div>

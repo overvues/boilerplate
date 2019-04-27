@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "jest",
