@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": "components",
     "outDir": "./lib",
-    "target": "es6"
+    "target": "es6",
+    "allowJs": true
   },
   "include": ["components"]
 }
