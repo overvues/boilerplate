@@ -20,40 +20,16 @@ const Page = ({ nows }) => (
         />
       </svg>
     </div>
-    <div className="clocks">
-      {nows.map(({ name, path, ext, now }) => (
-        <a
-          href={`https://zeit.co/now-examples/monorepo/4csp3st7w/source?f=src/${path}/index${ext}`}
-          title={name}
-          key={path}
-        >
-          <Time name={name} path={path} now={now} />
-        </a>
-      ))}
-    </div>
     <div className="intro">
       <hr />
-      <h2>What is this?</h2>
+      <h2>Next.JS Dynamic Site Example</h2>
       <p>
-        We built this deployment to showcase the power and flexibility of{' '}
-        <a href="https://zeit.co/blog/now-2">Now 2.0</a>. Its organized as a
-        monorepo that combines multiple technologies.
+        This is an example of a dynamic webapp managed and deployed from within
+        the monorepo. If you would like more information on the services that
+        make this possible, visit{' '}
+        <a href="https://zeit.co/blog/now-2">Now 2.0</a>.
       </p>
-      <p>
-        The entrypoint to this deployment is a Next.js application, compiled to
-        serverless functions that server-render on-demand.
-      </p>
-      <p>
-        Thanks to our{' '}
-        <a
-          href="https://zeit.co/docs/v2/deployments/builders/overview"
-          title="builders"
-        >
-          builders
-        </a>
-        , you are not limited to just static or dynamic, Go or Node.js. The
-        possibilities are endless.
-      </p>
+      <a href="https://zeit.co/blog/now-2">Return to Docs</a>.
     </div>
     <style jsx global>{`
       * {
@@ -198,17 +174,5 @@ const Page = ({ nows }) => (
     `}</style>
   </div>
 )
-
-Page.getInitialProps = async ({ req }) => {
-  const baseUrl = `https://${req.headers.host}/api`
-  const nows = await Promise.all(
-    langs.map(async ({ name, path, ext }) => {
-      const now = await (await fetch(`${baseUrl}/${path}`)).text()
-      return { name, path, now, ext }
-    })
-  )
-
-  return { nows }
-}
 
 export default Page

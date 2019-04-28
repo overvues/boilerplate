@@ -9,6 +9,7 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
+    "dev": "next",
     "now-build": "next build",
     "build": "tsc -p tsconfig.json",
     "test": "jest"

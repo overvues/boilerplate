@@ -2,7 +2,7 @@
   "name": "overvues",
   "version": 2,
   "builds": [
-    { "src": "packages/www/package.json", "use": "@now/next" },
+    { "src": "packages/next/package.json", "use": "@now/next" },
     {
       "src": "packages/static/package.json",
       "use": "@now/static-build",
@@ -19,7 +19,7 @@
     },
     {
       "src": "/next/(.*)",
-      "dest": "/packages/www/$1",
+      "dest": "/packages/next/$1",
       "headers": {
         "x-request-path": "$1"
       }

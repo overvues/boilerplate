@@ -72,9 +72,10 @@ Kind of feel like this is the same as testing but maybe not.
 
 ### Commands
 
-- To build all projects run `yarn build` at the root. 
 - To run individual packages, navigate within the packages and run scripts from within `package.json`. For development this command is `yarn dev`.
-- To deploy the project, you'll need to setup an account with Zeit, and run `yarn deploy` from the root. This will 
+- The ability to develop all packages in the monorepo locally, is unfortunately not yet available. Zeit will [soon release](https://github.com/zeit/now-cli/pull/1883#issuecomment-482397983) `now dev` which will allow this.
+- To build all projects run `yarn build` at the root. 
+- To deploy the project, you'll need to setup an account with Zeit, and run `yarn deploy` from the root. 
 
 ### Linting
 
@@ -101,4 +102,4 @@ In our case we will use circle-ci to check for linting on PR's.
 
 This boilerplate is maintained by Korinne and Adam as an example of our own workflow for personal projects and freelance work. If you would like to add to this boilerplate or offer an alternative, please raise an issue or submit a PR.
 
-If you would like to get in contact with us, you can find us online HERE AND HERE. 
+If you would like to get in contact with us, you can find us online at [korrine.dev](http://korinne.dev) AND HERE. 
