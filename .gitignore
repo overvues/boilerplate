@@ -1,0 +1,12 @@
+.cache
+.idea
+.next
+node_modules
+yarn-error.log
+.DS_Store
+lib
+coverage
+**/public
+**/.cache
+**/node_modules
+**/dist

@@ -1,0 +1,38 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "format": "lerna run format",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix",
+    "test": "lerna run test",
+    "now-build": "npm run build",
+    "deploy": "now"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.10.4",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.4.0",
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "jest-styled-components": "^6.3.1",
+    "lerna": "^3.13.1",
+    "lint-staged": "^8.1.5",
+    "now": "^15.0.8",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "workspaces": [
+    "packages/docs",
+    "packages/shared-components",
+    "packages/static",
+    "packages/next"
+  ]
+}
