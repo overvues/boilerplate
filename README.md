@@ -6,8 +6,10 @@ This repo is an example of a modern technology stack, and the considerations tha
 
 ### Dev
 
+- You can develop all packages in the Monorepo locally, using `now dev`. To learn more, read [this](https://zeit.co/blog/now-dev).
+
 - To run individual packages, navigate within the packages and run scripts from within `package.json`. For development this command is `yarn dev`.
-- The ability to develop all packages in the monorepo locally, is unfortunately not yet available. Zeit will [soon release](https://github.com/zeit/now-cli/pull/1883#issuecomment-482397983) `now dev` which will allow this.
+
 
 ### Build
 
