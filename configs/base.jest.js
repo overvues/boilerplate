@@ -5,12 +5,17 @@ module.exports = {
   transform: {
     '\\.(ts|tsx)$': 'ts-jest'
   },
-  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   verbose: true,
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tsconfig.json'
     }
   },
-  testPathIgnorePatterns: ['/node_modules/', '/.cache/', '/public/']
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '<rootDir>/packages/static/.cache/',
+    '/.cache/',
+    '/public/'
+  ]
 }

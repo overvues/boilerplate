@@ -31,9 +31,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # Add personal tests here, maybe build and deploy
-      # Honestly this should just be for linting, testing, and future stuff.
-      # Now for github deploys and catches, and I have a precommit hook. Might take that out...
+      # Add personal tests here:
       # - run: yarn test
       - run: yarn lint
       - run: yarn test

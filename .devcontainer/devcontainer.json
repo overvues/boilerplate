@@ -1,0 +1,15 @@
+// See https://aka.ms/vscode-remote/containers for the
+// documentation about the devcontainer.json format
+// Vscode Jest Ignoring Config: "orta.vscode-jest"
+{
+  "name": "Boilerplate Dev Container",
+  "dockerFile": "Dockerfile",
+  "appPort": [3000, 8000, 8080],
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "jpoissonnier.vscode-styled-components",
+    "prisma.vscode-graphql"
+  ]
+}

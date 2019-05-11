@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "now-dev": "vuepress dev docs",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "now-build": "npm run build && mv docs/.vuepress/dist dist"

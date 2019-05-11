@@ -11,5 +11,11 @@
     "noUnusedLocals": false,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules", "public", "**/*.spec.ts", "**/*.spec.tsx"]
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
 }
