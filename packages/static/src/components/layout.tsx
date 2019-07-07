@@ -9,7 +9,7 @@ interface Props {
   children: any
 }
 
-const Layout = (props: Props) => {
+export default function Layout(props: Props) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -45,5 +45,3 @@ const Layout = (props: Props) => {
     </>
   )
 }
-
-export default Layout

@@ -4,13 +4,13 @@ This repo is an example of a modern technology stack, and the considerations tha
 
 ## Commands
 
-The boilerplate can be installed locally using `yarn`, or using the pre-configured Docker container specified in the `devcontainer` folder. If you would like to develop inside the docker container environment, it is recommended to use the [Insiders VScode version](https://code.visualstudio.com/insiders/), and read [this blog](https://code.visualstudio.com/docs/remote/containers).
+The boilerplate can be installed locally using `yarn`, or using the pre-configured Docker container specified in the `devcontainer` folder. If you would like to develop inside the docker container environment, it is recommended to install the Remote Extension Pack, and read [this blog](https://code.visualstudio.com/docs/remote/containers).
 
 ### Dev
 
 - To run individual packages, navigate within the packages and run scripts from within `package.json`. For development this command is `yarn dev`.
 
-- You can develop all packages in the Monorepo locally, using `now dev`. To learn more, read [this](https://zeit.co/blog/now-dev).
+- You can develop all packages in the Monorepo locally, using `now dev`. To learn more, read [this](https://zeit.co/blog/now-dev), and install `now` locally. **NOTE**: `now dev` is still in beta, and currently the `vuepress` and `gatsby` static builds conflict with each other. It is recommended to test packages individually, instead of from the root. 
 
 
 ### Build
